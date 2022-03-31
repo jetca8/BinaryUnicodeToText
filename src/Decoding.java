@@ -42,7 +42,7 @@ public class Decoding {
 			
 		}
 				
-	return report;
+	return report; 
 	}
 
 	@Override //a tiny modification of eclipse generated one
