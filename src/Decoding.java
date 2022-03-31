@@ -45,7 +45,7 @@ public class Decoding {
 	return report;
 	}
 
-	@Override
+	@Override //a tiny modification of eclipse generated one
 	public String toString() {
 		return "Decoding...\n binaryString=" + binaryString + ",\n splitBinaryArray=" + Arrays.toString(splitBinaryArray)
 				+ ",\n hexArray=" + Arrays.toString(hexArray) + ",\n translationResult=" + translationResult;
