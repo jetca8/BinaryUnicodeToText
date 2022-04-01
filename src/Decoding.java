@@ -47,8 +47,25 @@ public class Decoding {
 
 	@Override //a tiny modification of eclipse generated one
 	public String toString() {
-		return "Decoding...\n binaryString=" + binaryString + ",\n splitBinaryArray=" + Arrays.toString(splitBinaryArray)
-				+ ",\n hexArray=" + Arrays.toString(hexArray) + ",\n translationResult=" + translationResult;
+		//return "Decoding...\n binaryString=" + binaryString + ",\n splitBinaryArray=" + Arrays.toString(splitBinaryArray)
+		//		+ ",\n hexArray=" + Arrays.toString(hexArray) + ",\n translationResult=" + translationResult;
+		String report = "";
+		report = report + "\nbinaryString:\n";
+		report = report + binaryString;
+	
+		report = report + "\nsplitBinaryArray:\n";
+		for(String str: splitBinaryArray) {
+			report = report + str.toUpperCase() + " ";
+		}
+		
+		report = report + "\nhexArray:\n";
+		for(String str: hexArray) {
+			report = report + str.toUpperCase() + " ";
+		}
+		
+		report = report + "\ntranslationResult:\n";
+		report = report + translationResult;
+		return report;
 	}
 	
 	
